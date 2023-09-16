@@ -1,6 +1,9 @@
 #pragma once
-#ifndef _PASSWORD_MANAGER_
-#define _PASSWORD_MANAGER
+#ifndef _ACTION_H_
+#define _ACTION_H_
+#include <string> 
+#include <fstream>
+#include <iostream>
 class write_file
 {
 public:
@@ -13,6 +16,8 @@ class read_file
 public:
 	read_file();
 	~read_file();
+	int check_user(std::string path,std::string nick);
+	std::string check_password(std::string path, int index);
 private:
 };
 class convert
