@@ -18,3 +18,22 @@ reg why_check_reg(int value)
 		break;
 	}
 }
+
+pass why_check_pass(int value)
+{
+	switch (value)
+	{
+	case 1:
+		return pass::var_check_pass;
+		break;
+	case 2:
+		return pass::var_new_pass;
+		break;
+	case 3:
+		return pass::var_exit;
+		break;
+	default:
+		return pass::var_no_in;
+		break;
+	}
+}
