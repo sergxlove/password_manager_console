@@ -125,7 +125,7 @@ std::string read_file::get_login(int index,std::string path)
 	std::fstream user;
 	std::string result;
 	int count = 1;
-	for (int i = 1;i <= index;i++)
+	for (int i = 1;i < index;i++)
 	{
 		line += 3;
 	}
@@ -135,7 +135,7 @@ std::string read_file::get_login(int index,std::string path)
 		while (!user.eof())
 		{
 			std::getline(user, result);
-			if (count == index)
+			if (count == line)
 			{
 				return result;
 			}
