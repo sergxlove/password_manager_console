@@ -120,5 +120,6 @@ int main()
 			break;
 		}
 	}
+	cout << "developer sergxlove" << endl;
 	return 0;
 }
